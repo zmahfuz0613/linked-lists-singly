@@ -1,3 +1,27 @@
+# Data Structures
+Data structures are collections of values, the relationship between them, and the functions or operations that can be applied to the data
+
+#### What characteristics must a data structures have and what are things in common between data structures? 
+
+- collection of values
+- contain a relationship between these values
+- functionality/operations that can be applied to the array.
+
+Different data structure excel in different situation. They are very useful in special cases and you have to know about them in order to decide when to implement one. 
+
+You've already worked with many data structure unknowingly. DOM - tree. They are often an interview questions.
+
+## These are some we'll be focussing on...
+- Binary Search Trees
+- Queues 
+- Single Linked Lists 
+- Undirected Unweighted Graphs 
+- Binary Heaps 
+- Directed Graphs
+- Hash Tables
+- Double Linked Lists
+- Stacks
+
 ## Linked lists 
 
 ### Objectives: 
