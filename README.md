@@ -18,6 +18,21 @@ Source: [Geeks for Geeks](https://www.geeksforgeeks.org/data-structures/linked-l
 We could also say that linked list consists of **nodes**, and each **node** has a **value** and a **pointer** to another node or null.
 Each item stores the address of the next item in the list. A bunch of random memory addresses are linked together. 
 
+```
+const list = {
+    head: {
+        value: 12
+        next: {
+            value: 99
+            next: {
+                value: 37
+                next: null
+            }
+        }
+    }
+};
+```
+
 * The first and last node of a linked list usually are called the **head** and **tail** of the list, respectively. Thus, we can traverse the list starting at the head and ending at the tail. 
 * The tail node is a special node, where the next pointer is always pointing or linking to a **null** reference, indicating the end of the list.
 
@@ -28,10 +43,16 @@ Arrays are great if you want to read random elements instantly, because you can 
 
 |               | Array          | Linked list  |
 | ------------- |:-------------:| ---------:|
-| Reading       | O(1)          |   O(n)    |
-| Insertion     | O(n)          |   O(1)     |
-| Deletion      | O(n)          |   O(1)     |
+| Reading(access)       | O(1)          |   O(N)    |
+| Insertion     | O(N)          |   O(1)    |
+| Removal     | O(N)          |   O(1) or O(N)   |              
+| Search     | O(1)          |   O(N)   |     
 
-*Insertion and Deletion refer to the beginning or the end of the array/linked lists.*
+
+
+Exceptions: 
+
+1. Insertion at the end of the array takes O(N). 
+2. Removing from end of a linked list takes O(N), because we need to find the item right before the tail and that inlolves going through the whole list.
 
 
